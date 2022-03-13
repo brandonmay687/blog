@@ -7,3 +7,33 @@
     font-family: 'Staatliches', cursive;
     font-weight: bold;
 } 
+
+.red {
+    color: red;
+}
+
+@media ( max-width: 480px ){
+    .header {
+        display: flex;
+        align-items: center;
+        height: 8rem;
+        border: 1px solid black;
+    }
+
+    .wrap {
+        width: 50%;
+        margin-left: 2rem;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+}
+
