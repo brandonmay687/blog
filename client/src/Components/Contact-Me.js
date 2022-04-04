@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { send } from 'emailjs-com';
-import Image from '../Images/contact-me.png';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles/Contact.css';
 
 const initialValues = {
@@ -41,7 +39,6 @@ const Contact_ME = () => {
 
     return (
         <div className = 'contact-me'>
-            <img src = {Image} alt = 'contact-me-today' />
             <form onSubmit={onSubmit} className = 'contact-form'>
                 <input
                     type='text'

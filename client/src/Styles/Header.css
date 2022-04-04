@@ -1,5 +1,8 @@
 .header {
     display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100vw;
     border: 1px solid black;
 }
 
@@ -12,7 +15,44 @@
     color: red;
 }
 
-@media ( max-width: 480px ){
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.logo {
+    height: 2rem;
+    width: 5rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.link {
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    font-size: x-large;
+    color: blue;
+}
+
+/* @media ( max-width: 480px ){
     .header {
         display: flex;
         align-items: center;
@@ -35,5 +75,5 @@
     .logo {
         width: 30%;
     }
-}
+} */
 
