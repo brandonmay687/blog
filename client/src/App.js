@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Post from './Components/Post';
 import Posts from './Components/Posts';
+import NewPost from './Components/NewPost';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path = 'about' element = { <About /> } />
           <Route path = 'post' element = { <Post /> } />
           <Route path = 'posts' element = { <Posts /> } />
+          <Route path = 'new-post' element = { <NewPost /> } />
           <Route path = 'contact' element = { <Contact /> } />
         </Routes>
     </div>
