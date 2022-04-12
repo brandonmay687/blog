@@ -10,7 +10,16 @@ const initialCreatePostValues = {
 const NewPost = () => {
     const [ createPost, setCreatePost ] = useState(initialCreatePostValues);
 
-    
+    const handleChange = (e) => {
+        setCreatePost({
+            ...createPost,
+            [ e.target.name ] : e.target.value
+        });
+    }
+
+    const onSubmit = (e) => {
+        
+    }
 
     return (
         <div className = 'new-post'>
