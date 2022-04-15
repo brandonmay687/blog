@@ -1,0 +1,20 @@
+.new-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: white;
+}
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px lightgray;
+    border: 1px solid black;
+}

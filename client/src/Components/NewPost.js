@@ -25,8 +25,10 @@ const NewPost = () => {
 
     return (
         <div className = 'new-post'>
-            <h1>New Post</h1>
-            <form>
+            <form className = 'new-post-form'>
+            <div className = 'title'>
+                <h1>Create a New Post</h1>
+            </div>
                 <label>Title: 
                     <input 
                         type = 'text'
@@ -46,7 +48,7 @@ const NewPost = () => {
                     />
                 </label>
 
-                <label>tags: 
+                <label>Tags: 
                     <input 
                         type = 'text'
                         name = 'tags'
