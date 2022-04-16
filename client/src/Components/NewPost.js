@@ -2,21 +2,13 @@ import React, { useState } from "react";
 
 import '../Styles/NewPost.css';
 
-const initialCreatePostValues = {
-    title: '',
-    post: '',
-    tags: [],
-    likes: 0
-}
-
 const NewPost = () => {
-    const [ createPost, setCreatePost ] = useState(initialCreatePostValues);
 
     const handleChange = (e) => {
-        setCreatePost({
-            ...createPost,
-            [ e.target.name ] : e.target.value
-        });
+        // setCreatePost({
+        //     ...createPost,
+        //     [ e.target.name ] : e.target.value
+        // });
     }
 
     const onSubmit = (e) => {
@@ -33,7 +25,7 @@ const NewPost = () => {
                     <input 
                         type = 'text'
                         name = 'title'
-                        value = { createPost.title }
+                        // value = { createPost.title }
                         maxLength = '30'
                         onChange = { handleChange }
                     />
@@ -43,7 +35,7 @@ const NewPost = () => {
                     <textarea 
                         type = 'text'
                         name = 'post'
-                        value = { createPost.post }
+                        // value = { createPost.post }
                         onChange = { handleChange }
                     />
                 </label>
@@ -52,7 +44,7 @@ const NewPost = () => {
                     <input 
                         type = 'text'
                         name = 'tags'
-                        value = { createPost.tags }
+                        // value = { createPost.tags }
                         onChange = { handleChange }
                     />
                 </label>
