@@ -4,7 +4,13 @@ const initialState = {
     title: '',
     post: '',
     tags: [],
-    likes: 0
+    likes: 0,
+    first_name: '',
+    last_name: '',
+    company: '',
+    to_name: 'Brandon',
+    message: '',
+    reply_to: ''
 }
 
 const reducer = ( state = initialState, action ) => {
